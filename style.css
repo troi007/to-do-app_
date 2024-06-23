@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif; /* Fuente principal */
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+#todoapp {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#todoapp > h1 {
+  text-align: center;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.taskText {
+  flex: 1;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+#task-filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+#task-filter li {
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+#task-filter li.active {
+  border-bottom-color: rgb(53, 131, 234);
+  padding: 20px;
+  border-bottom-width: 5px;
+}
+
+#add-task-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+#new-task-input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+#add-task-button {
+  padding: 8px;
+  background-color: rgb(53, 131, 234);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 10%;
+}
+
+#clear-completed {
+  display: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  padding: 10px;
+  width: 15%;
+  border-radius: 5px;
+  margin-left: 85%;
+  font-size: 10px;
+}
+input[type="checkbox" i] {
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+
+.task input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray; /* Borde gray */
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .task input[type="checkbox"]:checked {
+    background-color: rgb(53, 131, 234); 
+    border-color: rgb(53, 131, 234); 
+  }
+
+  .task input[type="checkbox"]:after {
+    content: "\2713"; 
+    font-size: 16px; 
+    color: #fff; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; 
+  }
+
+  .task input[type="checkbox"]:checked:after {
+    display: block; 
+  }
+
+  #add-task-section {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .add-task-section {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  #add-task-section.display-none {
+    display: none;
+  }
+  

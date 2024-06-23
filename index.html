@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/fe643b2ef8.js" crossorigin="anonymous"></script>
+    <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>To-Do App</title>
+</head>
+<body>
+  <div id="todoapp">
+    <h1>#todo</h1>
+      <div id="task-filter">
+        <li onclick="filterTasks('all')" >All</li>
+        <li onclick="filterTasks('active')">Active</li>
+        <li onclick="filterTasks('completed')">Completed</li>
+      </div>
+    <div id="add-task-section">
+      <input type="text" id="new-task-input" placeholder="add details">
+      <button id="add-task-button" onclick="addNewTask()">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+    <button id="clear-completed" onclick="clearCompleted()"><i class="fas fa-trash"></i> Delete all</button>
+  </div>
+</body>
+</html>
